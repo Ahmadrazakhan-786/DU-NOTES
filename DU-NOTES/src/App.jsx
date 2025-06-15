@@ -5,6 +5,10 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import MathPhysics1 from "./pages/Semester1/MathPhysics1";
+import Mechanics from "./pages/Semester1/Mechanics";
+import WavesOscillations from "./pages/Semester1/WavesOscillations";
+
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -15,13 +19,17 @@ function App() {
 
       <div
         className={`pt-32 px-4 sm:px-10 md:px-16 min-h-screen transition-colors duration-300 ${
-          dark ? "bg-[#343541] text-white" : "bg-white text-gray-900"
+          dark ? "bg-[#050414] text-white" : "bg-white text-gray-900"
         }`}
       >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/semester1/math-physics-1" element={<MathPhysics1 />} />
+<Route path="/semester1/mechanics" element={<Mechanics />} />
+<Route path="/semester1/waves-oscillations" element={<WavesOscillations />} />
+
         </Routes>
       </div>
     </Router>
