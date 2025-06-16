@@ -12,9 +12,9 @@ import Mechanics from "./pages/Semester1/Mechanics/Mechanics";
 import WavesOscillations from "./pages/Semester1/WavesOscillations/WavesOscillations";
 
 // Semester 2
-import MathPhysics2 from "./pages/Semester2/MathPhysics2";
-import ElectricityMagnetism from "./pages/Semester2/ElectricityMagnetism";
-import ElectricalCircuitAnalysis from "./pages/Semester2/ElectricalCircuitAnalysis";
+import MathPhysics2 from "./pages/Semester2/MathPhysics2/MathPhysics2";
+import ElectricityMagnetism from "./pages/Semester2/ElectricityMagnetism/ElectricityMagnetism";
+import ElectricalCircuitAnalysis from "./pages/Semester2/ElectricalCircuitAnalysis/ElectricalCircuitAnalysis";
 
 // Semester 3
 import MathPhysics3 from "./pages/Semester3/MathPhysics3";
@@ -77,8 +77,25 @@ function App() {
 
           {/* Semester 2 */}
           <Route path="/semester2/math-physics-2" element={<MathPhysics2 />} />
+          <Route path="/semester2/math-physics-2/notes" element={<div>MathPhysics2 Notes</div>} />
+          <Route path="/semester2/math-physics-2/pyqs" element={<div>MathPhysics2 PYQs</div>} />
+          <Route path="/semester2/math-physics-2/pyq-solutions" element={<div>MathPhysics2 PYQ Solutions</div>} />
+          <Route path="/semester2/math-physics-2/lab" element={<div>MathPhysics2 Lab Content</div>} />
+          <Route path="/semester2/math-physics-2/syllabus" element={<div>MathPhysics2 Syllabus</div>} />
+
           <Route path="/semester2/electricity-magnetism" element={<ElectricityMagnetism />} />
+          <Route path="/semester2/electricity-magnetism/notes" element={<div>Electricity & Magnetism Notes</div>} />
+          <Route path="/semester2/electricity-magnetism/pyqs" element={<div>Electricity & Magnetism PYQs</div>} />
+          <Route path="/semester2/electricity-magnetism/pyq-solutions" element={<div>Electricity & Magnetism PYQ Solutions</div>} />
+          <Route path="/semester2/electricity-magnetism/lab" element={<div>Electricity & Magnetism Lab Content</div>} />
+          <Route path="/semester2/electricity-magnetism/syllabus" element={<div>Electricity & Magnetism Syllabus</div>} />
+
           <Route path="/semester2/electrical-circuit-analysis" element={<ElectricalCircuitAnalysis />} />
+          <Route path="/semester2/electrical-circuit-analysis/notes" element={<div>Electrical Circuit Analysis Notes</div>} />
+          <Route path="/semester2/electrical-circuit-analysis/pyqs" element={<div>Electrical Circuit Analysis PYQs</div>} />
+          <Route path="/semester2/electrical-circuit-analysis/pyq-solutions" element={<div>Electrical Circuit Analysis PYQ Solutions</div>} />
+          <Route path="/semester2/electrical-circuit-analysis/lab" element={<div>Electrical Circuit Analysis Lab Content</div>} />
+          <Route path="/semester2/electrical-circuit-analysis/syllabus" element={<div>Electrical Circuit Analysis Syllabus</div>} />
 
           {/* Semester 3 */}
           <Route path="/semester3/math-physics-3" element={<MathPhysics3 />} />
