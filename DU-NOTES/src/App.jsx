@@ -22,19 +22,19 @@ import ThermalPhysics from "./pages/Semester3/ThermalPhysics/ThermalPhysics";
 import LightAndMatter from "./pages/Semester3/LightAndMatter/LightAndMatter";
 
 // Semester 4
-import ModernPhysics from "./pages/Semester4/ModernPhysics";
-import SolidStatePhysics from "./pages/Semester4/SolidStatePhysics";
-import AnalogElectronics from "./pages/Semester4/AnalogElectronics";
+import ModernPhysics from "./pages/Semester4/ModernPhysics/ModernPhysics";
+import SolidStatePhysics from "./pages/Semester4/SolidStatePhysics/SolidStatePhysics";
+import AnalogElectronics from "./pages/Semester4/AnalogElectronics/AnalogElectronics";
 
 // Semester 5
-import ElectromagneticTheory from "./pages/Semester5/ElectromagneticTheory";
-import QuantumMechanics1 from "./pages/Semester5/QuantumMechanics1";
-import DigitalElectronics from "./pages/Semester5/DigitalElectronics";
+import ElectromagneticTheory from "./pages/Semester5/ElectromagneticTheory/ElectromagneticTheory";
+import QuantumMechanics1 from "./pages/Semester5/QuantumMechanics1/QuantumMechanics1";
+import DigitalElectronics from "./pages/Semester5/DigitalElectronics/DigitalElectronics";
 
 // Semester 6
-import StatisticalMechanics from "./pages/Semester6/StatisticalMechanics";
-import AtomicMolecularNuclearPhysics from "./pages/Semester6/AtomicMolecularNuclearPhysics";
-import StatisticalAnalysis from "./pages/Semester6/StatisticalAnalysis";
+import StatisticalMechanics from "./pages/Semester6/StatisticalMechanics/StatisticalMechanics";
+import AtomicMolecularNuclearPhysics from "./pages/Semester6/AtomicMolecularNuclearPhysics/AtomicMolecularNuclearPhysics";
+import StatisticalAnalysis from "./pages/Semester6/StatisticalAnalysis/StatisticalAnalysis";
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -123,18 +123,76 @@ function App() {
 
           {/* Semester 4 */}
           <Route path="/semester4/modern-physics" element={<ModernPhysics />} />
+          <Route path="/semester4/modern-physics/syllabus" element={<div>Modern Physics Syllabus</div>} />
+          <Route path="/semester4/modern-physics/notes" element={<div>Modern Physics Notes</div>} />
+          <Route path="/semester4/modern-physics/pyqs" element={<div>Modern Physics PYQs</div>} />
+          <Route path="/semester4/modern-physics/pyq-solutions" element={<div>Modern Physics PYQ Solutions</div>} />
+          <Route path="/semester4/modern-physics/lab" element={<div>Modern Physics Lab Content</div>} />
+
           <Route path="/semester4/solid-state-physics" element={<SolidStatePhysics />} />
+          <Route path="/semester4/solid-state-physics/syllabus" element={<div>Solid State Physics Syllabus</div>} />
+          <Route path="/semester4/solid-state-physics/notes" element={<div>Solid State Physics Notes</div>} />
+          <Route path="/semester4/solid-state-physics/pyqs" element={<div>Solid State Physics PYQs</div>} />
+          <Route path="/semester4/solid-state-physics/pyq-solutions" element={<div>Solid State Physics PYQ Solutions</div>} />
+          <Route path="/semester4/solid-state-physics/lab" element={<div>Solid State Physics Lab Content</div>} />
+
+ 
           <Route path="/semester4/analog-electronics" element={<AnalogElectronics />} />
+          <Route path="/semester4/analog-electronics/syllabus" element={<div>Analog Electronics Syllabus</div>} />
+          <Route path="/semester4/analog-electronics/notes" element={<div>Analog Electronics Notes</div>} />
+          <Route path="/semester4/analog-electronics/pyqs" element={<div>Analog Electronics PYQs</div>} />
+          <Route path="/semester4/analog-electronics/pyq-solutions" element={<div>Analog Electronics PYQ Solutions</div>} />
+          <Route path="/semester4/analog-electronics/lab" element={<div>Analog Electronics Lab Content</div>} />
+
+          
+          
 
           {/* Semester 5 */}
           <Route path="/semester5/electromagnetic-theory" element={<ElectromagneticTheory />} />
-          <Route path="/semester5/quantum-mechanics-1" element={<QuantumMechanics1 />} />
-          <Route path="/semester5/digital-electronics" element={<DigitalElectronics />} />
+          <Route path="/semester5/electromagnetic-theory/syllabus" element={<div>Electromagnetic Theory Syllabus</div>} />
+          <Route path="/semester5/electromagnetic-theory/notes" element={<div>Electromagnetic Theory Notes</div>} />
+          <Route path="/semester5/electromagnetic-theory/pyqs" element={<div>Electromagnetic Theory PYQs</div>} />
+          <Route path="/semester5/electromagnetic-theory/pyq-solutions" element={<div>Electromagnetic Theory PYQ Solutions</div>} />
+          <Route path="/semester5/electromagnetic-theory/lab" element={<div>Electromagnetic Theory Lab Content</div>} />
+
+        <Route path="/semester5/quantum-mechanics-1" element={<QuantumMechanics1 />} />
+        <Route path="/semester5/quantum-mechanics-1/syllabus" element={<div>Quantum Mechanics 1 Syllabus</div>} />
+        <Route path="/semester5/quantum-mechanics-1/notes" element={<div>Quantum Mechanics 1 Notes</div>} />
+        <Route path="/semester5/quantum-mechanics-1/pyqs" element={<div>Quantum Mechanics 1 PYQs</div>} />
+        <Route path="/semester5/quantum-mechanics-1/pyq-solutions" element={<div>Quantum Mechanics 1 PYQ Solutions</div>} />
+        <Route path="/semester5/quantum-mechanics-1/lab" element={<div>Quantum Mechanics 1 Lab Content</div>} />
+
+        <Route path="/semester5/digital-electronics" element={<DigitalElectronics />} />
+        <Route path="/semester5/digital-electronics/syllabus" element={<div>Digital Electronics Syllabus</div>} />
+        <Route path="/semester5/digital-electronics/notes" element={<div>Digital Electronics Notes</div>} />
+        <Route path="/semester5/digital-electronics/pyqs" element={<div>Digital Electronics PYQs</div>} />
+        <Route path="/semester5/digital-electronics/pyq-solutions" element={<div>Digital Electronics PYQ Solutions</div>} />
+        <Route path="/semester5/digital-electronics/lab" element={<div>Digital Electronics Lab Content</div>} />
+
+          
+          
 
           {/* Semester 6 */}
           <Route path="/semester6/statistical-mechanics" element={<StatisticalMechanics />} />
+          <Route path="/semester6/statistical-mechanics/syllabus" element={<div>Statistical Mechanics Syllabus</div>} />
+          <Route path="/semester6/statistical-mechanics/notes" element={<div>Statistical Mechanics Notes</div>} />
+          <Route path="/semester6/statistical-mechanics/pyqs" element={<div>Statistical Mechanics PYQs</div>} />
+          <Route path="/semester6/statistical-mechanics/pyq-solutions" element={<div>Statistical Mechanics PYQ Solutions</div>} />
+          <Route path="/semester6/statistical-mechanics/lab" element={<div>Statistical Mechanics Lab Content</div>} />
+
           <Route path="/semester6/atomic-molecular-nuclear-physics" element={<AtomicMolecularNuclearPhysics />} />
+          <Route path="/semester6/atomic-molecular-nuclear-physics/syllabus" element={<div>Atomic Molecular Nuclear Physics Syllabus</div>} />
+          <Route path="/semester6/atomic-molecular-nuclear-physics/notes" element={<div>Atomic Molecular Nuclear Physics Notes</div>} />
+          <Route path="/semester6/atomic-molecular-nuclear-physics/pyqs" element={<div>Atomic Molecular Nuclear Physics PYQs</div>} />
+          <Route path="/semester6/atomic-molecular-nuclear-physics/pyq-solutions" element={<div>Atomic Molecular Nuclear Physics PYQ Solutions</div>} />
+          <Route path="/semester6/atomic-molecular-nuclear-physics/lab" element={<div>Atomic Molecular Nuclear Physics Lab Content</div>} />
+
           <Route path="/semester6/statistical-analysis" element={<StatisticalAnalysis />} />
+          <Route path="/semester6/statistical-analysis/syllabus" element={<div>Statistical Analysis Syllabus</div>} />
+          <Route path="/semester6/statistical-analysis/notes" element={<div>Statistical Analysis Notes</div>} />
+          <Route path="/semester6/statistical-analysis/pyqs" element={<div>Statistical Analysis PYQs</div>} />
+          <Route path="/semester6/statistical-analysis/pyq-solutions" element={<div>Statistical Analysis PYQ Solutions</div>} />
+          <Route path="/semester6/statistical-analysis/lab" element={<div>Statistical Analysis Lab Content</div>} />
         </Routes>
       </div>
     </Router>
