@@ -17,9 +17,9 @@ import ElectricityMagnetism from "./pages/Semester2/ElectricityMagnetism/Electri
 import ElectricalCircuitAnalysis from "./pages/Semester2/ElectricalCircuitAnalysis/ElectricalCircuitAnalysis";
 
 // Semester 3
-import MathPhysics3 from "./pages/Semester3/MathPhysics3";
-import ThermalPhysics from "./pages/Semester3/ThermalPhysics";
-import LightAndMatter from "./pages/Semester3/LightAndMatter";
+import MathPhysics3 from "./pages/Semester3/MathPhysics3/MathPhysics3";
+import ThermalPhysics from "./pages/Semester3/ThermalPhysics/ThermalPhysics";
+import LightAndMatter from "./pages/Semester3/LightAndMatter/LightAndMatter";
 
 // Semester 4
 import ModernPhysics from "./pages/Semester4/ModernPhysics";
@@ -99,8 +99,27 @@ function App() {
 
           {/* Semester 3 */}
           <Route path="/semester3/math-physics-3" element={<MathPhysics3 />} />
+          <Route path="/semester3/math-physics-3/notes" element={<div>Math Physics 3 Notes</div>} />
+          <Route path="/semester3/math-physics-3/pyqs" element={<div>Math Physics 3 PYQs</div>} />
+          <Route path="/semester3/math-physics-3/pyq-solutions" element={<div>Math Physics 3 PYQ Solutions</div>} />
+          <Route path="/semester3/math-physics-3/lab" element={<div>Math Physics 3 Lab Content</div>} />
+          <Route path="/semester3/math-physics-3/syllabus" element={<div>Math Physics 3 Syllabus</div>} />
+
           <Route path="/semester3/thermal-physics" element={<ThermalPhysics />} />
+          <Route path="/semester3/thermal-physics/notes" element={<div>Thermal Physics Notes</div>} />
+          <Route path="/semester3/thermal-physics/pyqs" element={<div>Thermal Physics PYQs</div>} />
+          <Route path="/semester3/thermal-physics/pyq-solutions" element={<div>Thermal Physics PYQ Solutions</div>} />
+          <Route path="/semester3/thermal-physics/lab" element={<div>Thermal Physics Lab Content</div>} />
+          <Route path="/semester3/thermal-physics/syllabus" element={<div>Thermal Physics Syllabus</div>} />
+
           <Route path="/semester3/light-and-matter" element={<LightAndMatter />} />
+          <Route path="/semester3/light-and-matter/notes" element={<div>Light and Matter Notes</div>} />
+          <Route path="/semester3/light-and-matter/pyqs" element={<div>Light and Matter PYQs</div>} />
+          <Route path="/semester3/light-and-matter/pyq-solutions" element={<div>Light and Matter PYQ Solutions</div>} />
+          <Route path="/semester3/light-and-matter/lab" element={<div>Light and Matter Lab Content</div>} />
+          <Route path="/semester3/light-and-matter/syllabus" element={<div>Light and Matter Syllabus</div>} />
+
+          
 
           {/* Semester 4 */}
           <Route path="/semester4/modern-physics" element={<ModernPhysics />} />
