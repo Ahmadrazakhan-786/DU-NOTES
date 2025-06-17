@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [selectedSemester, setSelectedSemester] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const semesterSubjects = {
     "Semester 1": [
@@ -32,9 +33,20 @@ const Home = () => {
     ],
     "Semester 6": [
       { name: "STATISTICAL MECHANICS", path: "/semester6/statistical-mechanics" },
-      { name: "ATOMIC, MOLECULAR AND NUCLEAR PHYSICS", path: "/semester6/atomic-molecular-nuclear-physics" },
-      { name: "STATISTICAL ANALYSIS IN PHYSICS", path: "/semester6/statistical-analysis" },
+      {
+        name: "ATOMIC, MOLECULAR AND NUCLEAR PHYSICS",
+        path: "/semester6/atomic-molecular-nuclear-physics",
+      },
+      {
+        name: "STATISTICAL ANALYSIS IN PHYSICS",
+        path: "/semester6/statistical-analysis",
+      },
     ],
+  };
+
+  const handleSelect = (sem) => {
+    setSelectedSemester(sem);
+    setShowDropdown(false);
   };
 
   return (
@@ -43,32 +55,38 @@ const Home = () => {
         BSC PHYSICS NOTES 💕
       </h1>
 
-      {/* Dropdown */}
-      <div className="relative w-[90%] max-w-md">
-        <select
-          value={selectedSemester}
-          onChange={(e) => setSelectedSemester(e.target.value)}
-          className="w-full px-4 py-3 rounded-lg bg-white text-black shadow-lg text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-[#2c2c2c] dark:text-white dark:shadow-gray-800"
+      {/* Custom Dropdown */}
+      <div className="relative w-full max-w-md px-2">
+        <button
+          onClick={() => setShowDropdown(!showDropdown)}
+          className="w-full px-4 py-3 rounded-lg bg-white text-black shadow-lg text-lg text-left focus:outline-none dark:bg-[#2c2c2c] dark:text-white"
         >
-          <option value="" disabled>
-            Select Your Semester
-          </option>
-          {Object.keys(semesterSubjects).map((sem, idx) => (
-            <option key={idx} value={sem}>
-              {sem}
-            </option>
-          ))}
-        </select>
+          {selectedSemester || "Select Your Semester"}
+        </button>
+
+        {showDropdown && (
+          <div className="absolute top-full mt-1 w-full max-h-60 overflow-y-auto bg-white dark:bg-[#2c2c2c] rounded-lg shadow-lg z-10">
+            {Object.keys(semesterSubjects).map((sem, idx) => (
+              <div
+                key={idx}
+                onClick={() => handleSelect(sem)}
+                className="px-4 py-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-gray-700"
+              >
+                {sem}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Subject Links */}
       {selectedSemester && (
-        <div className="flex flex-col items-start space-y-4 mt-4 w-[90%] max-w-md">
+        <div className="w-full max-w-md px-2 flex flex-col items-start space-y-4 mt-4">
           {semesterSubjects[selectedSemester].map((subject, index) => (
             <Link
               to={subject.path}
               key={index}
-              className="w-full px-4 py-3 rounded-lg bg-blue-100 hover:bg-blue-300 dark:bg-[#1e1e1e] dark:hover:bg-[#333] text-center transition-all font-medium shadow"
+              className="w-full px-4 py-3 rounded-lg bg-black text-center transition-all font-medium shadow text-white"
             >
               {subject.name}
             </Link>

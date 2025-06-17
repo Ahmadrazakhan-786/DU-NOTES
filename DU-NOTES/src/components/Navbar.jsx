@@ -11,7 +11,7 @@ const Navbar = ({ dark, setDark }) => {
       <nav
         className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-7xl 
         rounded-xl px-8 py-4 shadow-xl border flex justify-between items-center
-        ${dark ? "bg-[#2c2c2c] text-white" : "bg-white text-[#333]"} 
+        ${dark ? "bg-[#2c2c2c] text-white" : "bg-[#FDFBD4] text-[#333]"} 
         transition-all duration-300`}
       >
         {/* Left: Logo */}

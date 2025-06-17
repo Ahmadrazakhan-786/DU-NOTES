@@ -44,7 +44,7 @@ function App() {
       <Navbar dark={dark} setDark={setDark} />
       <div
         className={`pt-32 px-4 sm:px-10 md:px-16 min-h-screen transition-colors duration-300 ${
-          dark ? "bg-[#050414] text-white" : "bg-white text-gray-900"
+          dark ? "bg-[#0f0c34] text-white" : "bg-[#FDFBD4] text-gray-900"
         }`}
       >
         <Routes>
