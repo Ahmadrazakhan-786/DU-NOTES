@@ -64,19 +64,32 @@ const Home = () => {
           {selectedSemester || "Select Your Semester"}
         </button>
 
+        {/* Overlay for closing dropdown on outside click */}
         {showDropdown && (
-          <div className="absolute top-full mt-1 w-full max-h-60 overflow-y-auto bg-white dark:bg-[#2c2c2c] rounded-lg shadow-lg z-10">
-            {Object.keys(semesterSubjects).map((sem, idx) => (
-              <div
-                key={idx}
-                onClick={() => handleSelect(sem)}
-                className="px-4 py-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-gray-700"
-              >
-                {sem}
-              </div>
-            ))}
-          </div>
+          <div
+            className="fixed inset-0 z-10"
+            onClick={() => setShowDropdown(false)}
+          ></div>
         )}
+
+        {/* Dropdown Items */}
+         {showDropdown && (
+  <div className="absolute top-full left-2 right-2 mt-1 max-h-64 overflow-y-auto 
+  bg-white dark:bg-gray-800 rounded-lg shadow-lg z-50">
+    {Object.keys(semesterSubjects).map((sem, idx) => (
+      <div
+        key={idx}
+        onClick={() => handleSelect(sem)}
+        className="px-4 py-2 cursor-pointer 
+        hover:bg-blue-100 dark:hover:bg-gray-600 
+        text-black dark:text-white font-semibold"
+      >
+        {sem}
+      </div>
+    ))}
+  </div>
+)}
+
       </div>
 
       {/* Subject Links */}
