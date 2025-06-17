@@ -59,7 +59,7 @@ const Home = () => {
       <div className="relative w-full max-w-md px-2">
         <button
           onClick={() => setShowDropdown(!showDropdown)}
-          className="w-full px-4 py-3 rounded-lg bg-white text-black shadow-lg text-lg text-left focus:outline-none dark:bg-[#2c2c2c] dark:text-white"
+          className="w-full px-4 py-3 rounded-lg bg-white text-black shadow-lg text-lg text-left focus:outline-none dark:bg-[#2c2c2c] dark:text-white font-semibold"
         >
           {selectedSemester || "Select Your Semester"}
         </button>
@@ -99,7 +99,8 @@ const Home = () => {
             <Link
               to={subject.path}
               key={index}
-              className="w-full px-4 py-3 rounded-lg bg-black text-center transition-all font-medium shadow text-white"
+              className="w-full px-4 py-3 rounded-lg bg-black text-center transition-all font-medium shadow text-white border border-gray-50 hover:scale-[1.02] hover:shadow-lg hover:shadow-pink-500/10 
+                   active:scale-95  duration-200 ease-out"
             >
               {subject.name}
             </Link>
