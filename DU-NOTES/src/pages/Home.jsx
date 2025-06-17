@@ -38,28 +38,32 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start pt-20 space-y-8">
-      <h1 className="text-3xl font-bold text-[#FF007F] text-center">
+    <div className="min-h-screen flex flex-col items-center justify-start pt-20 px-4 space-y-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-[#FF007F] text-center">
         BSC PHYSICS NOTES 💕
       </h1>
 
       {/* Dropdown */}
-      <div className="relative w-72">
+      <div className="relative w-[90%] max-w-md">
         <select
           value={selectedSemester}
           onChange={(e) => setSelectedSemester(e.target.value)}
           className="w-full px-4 py-3 rounded-lg bg-white text-black shadow-lg text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-[#2c2c2c] dark:text-white dark:shadow-gray-800"
         >
-          <option value="" disabled>Select Your Semester</option>
+          <option value="" disabled>
+            Select Your Semester
+          </option>
           {Object.keys(semesterSubjects).map((sem, idx) => (
-            <option key={idx} value={sem}>{sem}</option>
+            <option key={idx} value={sem}>
+              {sem}
+            </option>
           ))}
         </select>
       </div>
 
       {/* Subject Links */}
       {selectedSemester && (
-        <div className="flex flex-col items-start space-y-4 mt-4 w-72">
+        <div className="flex flex-col items-start space-y-4 mt-4 w-[90%] max-w-md">
           {semesterSubjects[selectedSemester].map((subject, index) => (
             <Link
               to={subject.path}
