@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import heroOval from "/heroOval.png"; // ✅ Add your image inside public or src/assets
+import heroOval from "/heroOval.png";
 
 const Home = () => {
   const [selectedSemester, setSelectedSemester] = useState("");
@@ -51,36 +51,42 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start pt-20 px-4 space-y-8">
+    <div className="min-h-screen flex flex-col items-center justify-start pt-32 px-4 space-y-10">
 
-      {/* ✅ Top Welcome Section */}
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl">
-        {/* Text Side */}
-        <div className="text-left space-y-3 md:w-1/2">
+      {/* ✅ Hero Section */}
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-32 max-w-6xl">
+        {/* Left Text */}
+        <div className="text-left space-y-4 md:w-1/2">
           <h2 className="text-2xl md:text-3xl font-bold text-[#FF007F]">
-            Welcome to DU Notes
+            WELCOME TO DU NOTES
           </h2>
           <p className="text-base md:text-lg text-gray-500 font-bold">
-            Your one-stop destination for DU BSc Physics Honours semester-wise notes. Designed for clarity, accessibility, and smart revision.
+            Your one-stop destination for all B.Sc. Physics (Hons.) DU resources!
+            Access high-quality notes, PYQs, syllabus, lab manuals, and more – all in one place.
+            Created specially for DU students.
+            Study smart, stay consistent, and top your semester exams with confidence.
+            Let’s make physics fun and stress-free together! ✨
           </p>
         </div>
 
-        {/* Image Side */}
+        {/* ✅ Right Image with Hover Rotate + Glow Effect */}
         <div className="md:w-1/2 flex justify-center">
-          <img
-            src={heroOval}
-            alt="DU Physics"
-            className="w-60 h-60 rounded-full object-cover shadow-lg "
-          />
+          <div className="relative group w-60 h-60 rounded-full overflow-hidden transition-all duration-500">
+            <img
+              src={heroOval}
+              alt="DU Physics"
+              className="w-full h-full object-cover rounded-full transform transition-all duration-500 ease-in-out group-hover:rotate-12 group-hover:scale-110 group-hover:shadow-[0_0_40px_10px_rgba(255,0,127,0.6)]"
+            />
+          </div>
         </div>
       </div>
 
       {/* ✅ Main Heading */}
-      <h1 className="text-3xl md:text-4xl font-bold text-[#FF007F] text-center">
+      <h1 className="text-4xl font-bold text-[#FF007F] text-center mt-10">
         BSC PHYSICS NOTES 💕
       </h1>
 
-      {/* ✅ Dropdown Section */}
+      {/* ✅ Dropdown */}
       <div className="relative w-full max-w-md px-2">
         <button
           onClick={() => setShowDropdown(!showDropdown)}
@@ -90,31 +96,31 @@ const Home = () => {
         </button>
 
         {showDropdown && (
-          <div
-            className="fixed inset-0 z-10"
-            onClick={() => setShowDropdown(false)}
-          ></div>
-        )}
+          <>
+            <div
+              className="fixed inset-0 z-10"
+              onClick={() => setShowDropdown(false)}
+            ></div>
 
-        {showDropdown && (
-          <div className="absolute top-full left-2 right-2 mt-1 max-h-64 overflow-y-auto 
-            bg-white dark:bg-gray-800 rounded-lg shadow-lg z-50">
-            {Object.keys(semesterSubjects).map((sem, idx) => (
-              <div
-                key={idx}
-                onClick={() => handleSelect(sem)}
-                className="px-4 py-2 cursor-pointer 
-                hover:bg-blue-100 dark:hover:bg-gray-600 
-                text-black dark:text-white font-semibold"
-              >
-                {sem}
-              </div>
-            ))}
-          </div>
+            <div className="absolute top-full left-2 right-2 mt-1 max-h-64 overflow-y-auto 
+              bg-white dark:bg-gray-800 rounded-lg shadow-lg z-50">
+              {Object.keys(semesterSubjects).map((sem, idx) => (
+                <div
+                  key={idx}
+                  onClick={() => handleSelect(sem)}
+                  className="px-4 py-2 cursor-pointer 
+                  hover:bg-blue-100 dark:hover:bg-gray-600 
+                  text-black dark:text-white font-semibold"
+                >
+                  {sem}
+                </div>
+              ))}
+            </div>
+          </>
         )}
       </div>
 
-      {/* ✅ Subject Links */}
+      {/* ✅ Subject List */}
       {selectedSemester && (
         <div className="w-full max-w-md px-2 flex flex-col items-start space-y-4 mt-4">
           {semesterSubjects[selectedSemester].map((subject, index) => (
@@ -122,7 +128,7 @@ const Home = () => {
               to={subject.path}
               key={index}
               className="w-full px-4 py-3 rounded-lg bg-black text-center transition-all font-medium shadow text-white border border-gray-50 hover:scale-[1.02] hover:shadow-lg hover:shadow-pink-500/10 
-                   active:scale-95  duration-200 ease-out"
+                active:scale-95 duration-200 ease-out"
             >
               {subject.name}
             </Link>

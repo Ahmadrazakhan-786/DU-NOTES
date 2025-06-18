@@ -40,11 +40,13 @@ function App() {
   const [dark, setDark] = useState(false);
 
   return (
+   
     <Router>
       <Navbar dark={dark} setDark={setDark} />
+     
       <div
         className={`pt-32 px-4 sm:px-10 md:px-16 min-h-screen transition-colors duration-300 ${
-          dark ? "bg-[#0f0c34] text-white" : "bg-[#fdfbd4] text-gray-900"
+          dark ? "bg-[#2c2c2c] text-white" : "bg-[#fdfbd4] text-gray-900"
         }`}
       >
         <Routes>
@@ -196,6 +198,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+   
   );
 }
 
