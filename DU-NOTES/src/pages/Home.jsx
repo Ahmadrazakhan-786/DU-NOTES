@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import heroOval from "/heroOval.png"; // ✅ Add your image inside public or src/assets
 
 const Home = () => {
   const [selectedSemester, setSelectedSemester] = useState("");
@@ -51,11 +52,35 @@ const Home = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-start pt-20 px-4 space-y-8">
+
+      {/* ✅ Top Welcome Section */}
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl">
+        {/* Text Side */}
+        <div className="text-left space-y-3 md:w-1/2">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#FF007F]">
+            Welcome to DU Notes
+          </h2>
+          <p className="text-base md:text-lg text-gray-500 font-bold">
+            Your one-stop destination for DU BSc Physics Honours semester-wise notes. Designed for clarity, accessibility, and smart revision.
+          </p>
+        </div>
+
+        {/* Image Side */}
+        <div className="md:w-1/2 flex justify-center">
+          <img
+            src={heroOval}
+            alt="DU Physics"
+            className="w-60 h-60 rounded-full object-cover shadow-lg "
+          />
+        </div>
+      </div>
+
+      {/* ✅ Main Heading */}
       <h1 className="text-3xl md:text-4xl font-bold text-[#FF007F] text-center">
         BSC PHYSICS NOTES 💕
       </h1>
 
-      {/* Custom Dropdown */}
+      {/* ✅ Dropdown Section */}
       <div className="relative w-full max-w-md px-2">
         <button
           onClick={() => setShowDropdown(!showDropdown)}
@@ -64,7 +89,6 @@ const Home = () => {
           {selectedSemester || "Select Your Semester"}
         </button>
 
-        {/* Overlay for closing dropdown on outside click */}
         {showDropdown && (
           <div
             className="fixed inset-0 z-10"
@@ -72,27 +96,25 @@ const Home = () => {
           ></div>
         )}
 
-        {/* Dropdown Items */}
-         {showDropdown && (
-  <div className="absolute top-full left-2 right-2 mt-1 max-h-64 overflow-y-auto 
-  bg-white dark:bg-gray-800 rounded-lg shadow-lg z-50">
-    {Object.keys(semesterSubjects).map((sem, idx) => (
-      <div
-        key={idx}
-        onClick={() => handleSelect(sem)}
-        className="px-4 py-2 cursor-pointer 
-        hover:bg-blue-100 dark:hover:bg-gray-600 
-        text-black dark:text-white font-semibold"
-      >
-        {sem}
-      </div>
-    ))}
-  </div>
-)}
-
+        {showDropdown && (
+          <div className="absolute top-full left-2 right-2 mt-1 max-h-64 overflow-y-auto 
+            bg-white dark:bg-gray-800 rounded-lg shadow-lg z-50">
+            {Object.keys(semesterSubjects).map((sem, idx) => (
+              <div
+                key={idx}
+                onClick={() => handleSelect(sem)}
+                className="px-4 py-2 cursor-pointer 
+                hover:bg-blue-100 dark:hover:bg-gray-600 
+                text-black dark:text-white font-semibold"
+              >
+                {sem}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* Subject Links */}
+      {/* ✅ Subject Links */}
       {selectedSemester && (
         <div className="w-full max-w-md px-2 flex flex-col items-start space-y-4 mt-4">
           {semesterSubjects[selectedSemester].map((subject, index) => (

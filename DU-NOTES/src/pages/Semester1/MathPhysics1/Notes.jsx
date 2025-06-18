@@ -1,11 +1,24 @@
-// Example: Notes.jsx
 import React from "react";
+import DownloadCard from "../../components/DownloadCard";
 
 const Notes = () => {
+  const handleDownload = () => {
+    alert("📥 Download Math Physics Notes PDF from Django backend");
+    // window.open("https://your-backend-link.pdf", "_blank");
+  };
+
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-bold text-[#FF007F] mb-4">📘 Notes</h2>
-      <p className="text-lg">Notes content for this subject will appear here.</p>
+    <div className="min-h-screen px-4 py-10 bg-white dark:bg-[#1a1a1a] transition-colors duration-300">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800 dark:text-white">
+        📚 Math Physics Notes
+      </h2>
+
+      <div className="flex justify-center">
+        <DownloadCard
+          title="📘 Math Physics Complete Notes"
+          onClick={handleDownload}
+        />
+      </div>
     </div>
   );
 };
