@@ -51,9 +51,9 @@ function App() {
       >
         <Routes>
           {/* General */}
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home dark={dark}/>} />
+          <Route path="/about" element={<About dark={dark}/>} />
+          <Route path="/contact" element={<Contact dark={dark} />} />
 
           {/* Semester 1 */}
           <Route path="/semester1/math-physics-1" element={<MathPhysics1 />} />

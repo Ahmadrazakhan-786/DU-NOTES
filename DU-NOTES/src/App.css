@@ -40,7 +40,5 @@
 .read-the-docs {
   color: #888;
 }
-body {
-  @apply bg-gradient-to-b from-[#0f0f1a] to-[#111] text-white;
-}
+
 

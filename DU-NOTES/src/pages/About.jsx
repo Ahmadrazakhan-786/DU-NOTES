@@ -16,7 +16,7 @@ const team = [
   },
   {
     name: "Ashir",
-    role: "Notes Provided",
+    role: "Owner",
     image: "/ashir.jpg",
     github: "https://github.com/ashir",
   },
@@ -26,10 +26,14 @@ const About = ({ dark }) => {
   return (
     <section
       className={`min-h-screen px-6 py-20 transition-all duration-300 ${
-        dark ? "text-white" : "text-black"
+        dark ? "text-white bg-[#2c2c2c]" : "text-black bg-[#fefede]"
       }`}
     >
-      <h1 className="text-4xl font-bold text-center mb-12">
+      <h1
+        className={`text-4xl font-bold text-center mb-12 ${
+          dark ? "text-white" : "text-black"
+        }`}
+      >
         Meet the Team 👨‍💻
       </h1>
 
@@ -37,11 +41,13 @@ const About = ({ dark }) => {
         {team.map((member, index) => (
           <div
             key={index}
-            className={`rounded-xl p-6 flex flex-col items-center backdrop-blur-md shadow-lg transition-all duration-300 ${
-              dark
-                ? "bg-[#2c2c2c]/60 border border-white/10"
-                : "bg-white/80 border border-black/10"
-            }`}
+            className={`rounded-xl p-6 flex flex-col items-center transition-all duration-300 transform border border-white 
+              ${
+                dark
+                  ? "bg-[#1e1e2f]/60 hover:shadow-[0_0_15px_#ffffff50]"
+                  : "bg-white/90 hover:shadow-[0_0_20px_#00000020]"
+              }
+              hover:scale-[1.05] hover:border-white`}
           >
             <img
               src={member.image}
