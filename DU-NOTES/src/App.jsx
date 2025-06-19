@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 // Semester 1
 import MathPhysics1 from "./pages/Semester1/MathPhysics1/MathPhysics1";
@@ -36,10 +37,13 @@ import StatisticalMechanics from "./pages/Semester6/StatisticalMechanics/Statist
 import AtomicMolecularNuclearPhysics from "./pages/Semester6/AtomicMolecularNuclearPhysics/AtomicMolecularNuclearPhysics";
 import StatisticalAnalysis from "./pages/Semester6/StatisticalAnalysis/StatisticalAnalysis";
 
+
+
 function App() {
   const [dark, setDark] = useState(false);
 
   return (
+
    
     <Router>
       <Navbar dark={dark} setDark={setDark} />
@@ -196,6 +200,7 @@ function App() {
           <Route path="/semester6/statistical-analysis/pyq-solutions" element={<div>Statistical Analysis PYQ Solutions</div>} />
           <Route path="/semester6/statistical-analysis/lab" element={<div>Statistical Analysis Lab Content</div>} />
         </Routes>
+         <Footer dark={dark}/>
       </div>
     </Router>
    

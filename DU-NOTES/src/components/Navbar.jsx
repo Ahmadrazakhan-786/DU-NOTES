@@ -14,7 +14,7 @@ const Navbar = ({ dark, setDark }) => {
         transition-all duration-300`}
       >
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-600">
+        <div className="text-2xl font-bold text-[#a958f4]">
           <Link to="/">📘 DU Notes</Link>
         </div>
 
@@ -35,8 +35,8 @@ const Navbar = ({ dark, setDark }) => {
               {/* Full blue box on hover */}
               <span
                 className="absolute inset-0 z-0 rounded-lg
-                  border border-blue-500 opacity-0 group-hover:opacity-100 
-                  group-hover:bg-blue-500 group-hover:shadow-[0_0_10px_#3b82f6]
+                  border border-purple-500 opacity-0 group-hover:opacity-100 
+                  group-hover:bg-purple-500 group-hover:shadow-[0_0_10px_#3b82f6]
                   transition-all duration-300"
               ></span>
 
@@ -83,8 +83,8 @@ const Navbar = ({ dark, setDark }) => {
               key={idx}
               to={`/${item === "Home" ? "" : item.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="px-6 py-3 rounded-lg border border-blue-500 text-blue-600 
-              hover:bg-blue-500 hover:text-white transition-all duration-300"
+              className="px-6 py-3 rounded-lg border border-purple-500 text-purple-600 
+              hover:bg-purple-500 hover:text-white transition-all duration-300"
             >
               {item}
             </Link>
