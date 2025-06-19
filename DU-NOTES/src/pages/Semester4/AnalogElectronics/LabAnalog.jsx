@@ -1,7 +1,7 @@
 // src/pages/Semester1/MathPhysics1/Lab.jsx
 import DownloadCard from "../../../components/DownloadCard";
 
-const LabMath3 = () => {
+const LabAnalog = () => {
   return (
     <DownloadCard
       chapterTitle="MathPhysics Lab Manual"
@@ -10,4 +10,4 @@ const LabMath3 = () => {
   );
 };
 
-export default LabMath3;
+export default LabAnalog;

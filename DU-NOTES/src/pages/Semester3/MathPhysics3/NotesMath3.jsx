@@ -3,8 +3,8 @@ import DownloadCard from "../../../components/DownloadCard";
 const NotesMath3 = () => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics Notes"
-      pdfLink="/pdfs/mathphysics1-notes.pdf"
+      chapterTitle="MathPhysics3 Notes"
+      pdfLink="/pdfs/mathphysics3-notes.pdf"
     />
   );
 };

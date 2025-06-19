@@ -57,9 +57,9 @@ import SyllabusECA from "./pages/Semester2/ElectricalCircuitAnalysis/SyllabusECA
 import MathPhysics3 from "./pages/Semester3/MathPhysics3/MathPhysics3";
 import LabMath3 from "./pages/Semester3/MathPhysics3/LabMath3";
 import NotesMath3 from "./pages/Semester3/MathPhysics3/NotesMath3";
-import PYQSMath3 from "./pages/Semester3/MathPhysics3/PYQS";
-import PYQSolutionsMath3 from "./pages/Semester3/MathPhysics3/PYQSolutions";
-import SyllabusMath3 from "./pages/Semester3/MathPhysics3/Syllabus";
+import PYQSMath3 from "./pages/Semester3/MathPhysics3/PYQSMath3";
+import PYQSolutionsMath3 from "./pages/Semester3/MathPhysics3/PYQSolutionsMath3";
+import SyllabusMath3 from "./pages/Semester3/MathPhysics3/SyllabusMath3";
 
 import ThermalPhysics from "./pages/Semester3/ThermalPhysics/ThermalPhysics";
 import LabThermal from "./pages/Semester3/ThermalPhysics/LabThermal";
@@ -69,15 +69,52 @@ import PYQSolutionsThermal from "./pages/Semester3/ThermalPhysics/PYQSolutionsTh
 import SyllabusThermal from "./pages/Semester3/ThermalPhysics/SyllabusThermal";
 
 import LightAndMatter from "./pages/Semester3/LightAndMatter/LightAndMatter";
+import LabLM from "./pages/Semester3/LightAndMatter/LabLM";
+import NotesLM from "./pages/Semester3/LightAndMatter/NotesLM";
+import PYQSLM from "./pages/Semester3/LightAndMatter/PYQSLM";
+import PYQSolutionsLM from "./pages/Semester3/LightAndMatter/PYQSolutionsLM";
+import SyllabusLM from "./pages/Semester3/LightAndMatter/SyllabusLM";
+
 
 // Semester 4
 import ModernPhysics from "./pages/Semester4/ModernPhysics/ModernPhysics";
+import LabModern from "./pages/Semester4/ModernPhysics/LabModern";
+import NotesModern from "./pages/Semester4/ModernPhysics/NotesModern";
+import PYQSModern from "./pages/Semester4/ModernPhysics/PYQSModern";
+import PYQSolutionsModern from "./pages/Semester4/ModernPhysics/PYQSolutionsModern";
+import SyllabusModern from "./pages/Semester4/ModernPhysics/SyllabusModern";
+
 import SolidStatePhysics from "./pages/Semester4/SolidStatePhysics/SolidStatePhysics";
+import LabSolid from "./pages/Semester4/SolidStatePhysics/LabSolid";
+import NotesSolid from "./pages/Semester4/SolidStatePhysics/NotesSolid";
+import PYQSSolid from "./pages/Semester4/SolidStatePhysics/PYQSSolid";
+import PYQSolutionsSolid from "./pages/Semester4/SolidStatePhysics/PYQSolutionsSolid";
+import SyllabusSolid from "./pages/Semester4/SolidStatePhysics/SyllabusSolid";
+
+
 import AnalogElectronics from "./pages/Semester4/AnalogElectronics/AnalogElectronics";
+import LabAnalog from "./pages/Semester4/AnalogElectronics/LabAnalog";
+import NotesAnalog from "./pages/Semester4/AnalogElectronics/NotesAnalog";
+import PYQSAnalog from "./pages/Semester4/AnalogElectronics/PYQSAnalog";
+import PYQSolutionsAnalog from "./pages/Semester4/AnalogElectronics/PYQSolutionsAnalog";
+import SyllabusAnalog from "./pages/Semester4/AnalogElectronics/SyllabusAnalog";
+
 
 // Semester 5
 import ElectromagneticTheory from "./pages/Semester5/ElectromagneticTheory/ElectromagneticTheory";
+import LabEMT from "./pages/Semester5/ElectromagneticTheory/LabEMT";
+import NotesEMT from "./pages/Semester5/ElectromagneticTheory/NotesEMT";
+import PYQSEMT from "./pages/Semester5/ElectromagneticTheory/PYQSEMT";
+import PYQSolutionsEMT from "./pages/Semester5/ElectromagneticTheory/PYQSolutionsEMT";
+import SyllabusEMT from "./pages/Semester5/ElectromagneticTheory/SyllabusEMT";
+
 import QuantumMechanics1 from "./pages/Semester5/QuantumMechanics1/QuantumMechanics1";
+import LabQM1 from "./pages/Semester5/QuantumMechanics1/LabQM1";
+import NotesQM1 from "./pages/Semester5/QuantumMechanics1/NotesQM1";
+import PYQSQM1 from "./pages/Semester5/QuantumMechanics1/PYQSQM1";
+import PYQSolutionsQM1 from "./pages/Semester5/QuantumMechanics1/PYQSolutionsQM1";
+import SyllabusQM1 from "./pages/Semester5/QuantumMechanics1/SyllabusQM1";
+
 import DigitalElectronics from "./pages/Semester5/DigitalElectronics/DigitalElectronics";
 
 // Semester 6
@@ -173,61 +210,69 @@ function App() {
 <Route path="/semester3/thermal-physics/pyq-solutions" element={<PYQSolutionsThermal />} />
 <Route path="/semester3/thermal-physics/syllabus" element={<SyllabusThermal />} />
 
-          <Route path="/semester3/thermal-physics/notes" element={<div>Thermal Physics Notes</div>} />
-          <Route path="/semester3/thermal-physics/pyqs" element={<div>Thermal Physics PYQs</div>} />
-          <Route path="/semester3/thermal-physics/pyq-solutions" element={<div>Thermal Physics PYQ Solutions</div>} />
-          <Route path="/semester3/thermal-physics/lab" element={<div>Thermal Physics Lab Content</div>} />
-          <Route path="/semester3/thermal-physics/syllabus" element={<div>Thermal Physics Syllabus</div>} />
+         
 
           <Route path="/semester3/light-and-matter" element={<LightAndMatter />} />
-          <Route path="/semester3/light-and-matter/notes" element={<div>Light and Matter Notes</div>} />
-          <Route path="/semester3/light-and-matter/pyqs" element={<div>Light and Matter PYQs</div>} />
-          <Route path="/semester3/light-and-matter/pyq-solutions" element={<div>Light and Matter PYQ Solutions</div>} />
-          <Route path="/semester3/light-and-matter/lab" element={<div>Light and Matter Lab Content</div>} />
-          <Route path="/semester3/light-and-matter/syllabus" element={<div>Light and Matter Syllabus</div>} />
+<Route path="/semester3/light-and-matter/lab" element={<LabLM />} />
+<Route path="/semester3/light-and-matter/notes" element={<NotesLM />} />
+<Route path="/semester3/light-and-matter/pyqs" element={<PYQSLM />} />
+<Route path="/semester3/light-and-matter/pyq-solutions" element={<PYQSolutionsLM />} />
+<Route path="/semester3/light-and-matter/syllabus" element={<SyllabusLM />} />
+
+          
 
           
 
           {/* Semester 4 */}
           <Route path="/semester4/modern-physics" element={<ModernPhysics />} />
-          <Route path="/semester4/modern-physics/syllabus" element={<div>Modern Physics Syllabus</div>} />
-          <Route path="/semester4/modern-physics/notes" element={<div>Modern Physics Notes</div>} />
-          <Route path="/semester4/modern-physics/pyqs" element={<div>Modern Physics PYQs</div>} />
-          <Route path="/semester4/modern-physics/pyq-solutions" element={<div>Modern Physics PYQ Solutions</div>} />
-          <Route path="/semester4/modern-physics/lab" element={<div>Modern Physics Lab Content</div>} />
+<Route path="/semester4/modern-physics/lab" element={<LabModern />} />
+<Route path="/semester4/modern-physics/notes" element={<NotesModern />} />
+<Route path="/semester4/modern-physics/pyqs" element={<PYQSModern />} />
+<Route path="/semester4/modern-physics/pyq-solutions" element={<PYQSolutionsModern />} />
+<Route path="/semester4/modern-physics/syllabus" element={<SyllabusModern />} />
+
 
           <Route path="/semester4/solid-state-physics" element={<SolidStatePhysics />} />
-          <Route path="/semester4/solid-state-physics/syllabus" element={<div>Solid State Physics Syllabus</div>} />
-          <Route path="/semester4/solid-state-physics/notes" element={<div>Solid State Physics Notes</div>} />
-          <Route path="/semester4/solid-state-physics/pyqs" element={<div>Solid State Physics PYQs</div>} />
-          <Route path="/semester4/solid-state-physics/pyq-solutions" element={<div>Solid State Physics PYQ Solutions</div>} />
-          <Route path="/semester4/solid-state-physics/lab" element={<div>Solid State Physics Lab Content</div>} />
+<Route path="/semester4/solid-state-physics/lab" element={<LabSolid />} />
+<Route path="/semester4/solid-state-physics/notes" element={<NotesSolid />} />
+<Route path="/semester4/solid-state-physics/pyqs" element={<PYQSSolid />} />
+<Route path="/semester4/solid-state-physics/pyq-solutions" element={<PYQSolutionsSolid />} />
+<Route path="/semester4/solid-state-physics/syllabus" element={<SyllabusSolid />} />
+
+     
 
  
           <Route path="/semester4/analog-electronics" element={<AnalogElectronics />} />
-          <Route path="/semester4/analog-electronics/syllabus" element={<div>Analog Electronics Syllabus</div>} />
-          <Route path="/semester4/analog-electronics/notes" element={<div>Analog Electronics Notes</div>} />
-          <Route path="/semester4/analog-electronics/pyqs" element={<div>Analog Electronics PYQs</div>} />
-          <Route path="/semester4/analog-electronics/pyq-solutions" element={<div>Analog Electronics PYQ Solutions</div>} />
-          <Route path="/semester4/analog-electronics/lab" element={<div>Analog Electronics Lab Content</div>} />
+<Route path="/semester4/analog-electronics/lab" element={<LabAnalog />} />
+<Route path="/semester4/analog-electronics/notes" element={<NotesAnalog />} />
+<Route path="/semester4/analog-electronics/pyqs" element={<PYQSAnalog />} />
+<Route path="/semester4/analog-electronics/pyq-solutions" element={<PYQSolutionsAnalog />} />
+<Route path="/semester4/analog-electronics/syllabus" element={<SyllabusAnalog />} />
+
+        
 
           
           
 
           {/* Semester 5 */}
           <Route path="/semester5/electromagnetic-theory" element={<ElectromagneticTheory />} />
-          <Route path="/semester5/electromagnetic-theory/syllabus" element={<div>Electromagnetic Theory Syllabus</div>} />
-          <Route path="/semester5/electromagnetic-theory/notes" element={<div>Electromagnetic Theory Notes</div>} />
-          <Route path="/semester5/electromagnetic-theory/pyqs" element={<div>Electromagnetic Theory PYQs</div>} />
-          <Route path="/semester5/electromagnetic-theory/pyq-solutions" element={<div>Electromagnetic Theory PYQ Solutions</div>} />
-          <Route path="/semester5/electromagnetic-theory/lab" element={<div>Electromagnetic Theory Lab Content</div>} />
+<Route path="/semester5/electromagnetic-theory/lab" element={<LabEMT />} />
+<Route path="/semester5/electromagnetic-theory/notes" element={<NotesEMT />} />
+<Route path="/semester5/electromagnetic-theory/pyqs" element={<PYQSEMT />} />
+<Route path="/semester5/electromagnetic-theory/pyq-solutions" element={<PYQSolutionsEMT />} />
+<Route path="/semester5/electromagnetic-theory/syllabus" element={<SyllabusEMT />} />
+
+        
 
         <Route path="/semester5/quantum-mechanics-1" element={<QuantumMechanics1 />} />
-        <Route path="/semester5/quantum-mechanics-1/syllabus" element={<div>Quantum Mechanics 1 Syllabus</div>} />
-        <Route path="/semester5/quantum-mechanics-1/notes" element={<div>Quantum Mechanics 1 Notes</div>} />
-        <Route path="/semester5/quantum-mechanics-1/pyqs" element={<div>Quantum Mechanics 1 PYQs</div>} />
-        <Route path="/semester5/quantum-mechanics-1/pyq-solutions" element={<div>Quantum Mechanics 1 PYQ Solutions</div>} />
-        <Route path="/semester5/quantum-mechanics-1/lab" element={<div>Quantum Mechanics 1 Lab Content</div>} />
+        <Route path="/semester5/quantum-mechanics-1" element={<QuantumMechanics1 />} />
+<Route path="/semester5/quantum-mechanics-1/lab" element={<LabQM1 />} />
+<Route path="/semester5/quantum-mechanics-1/notes" element={<NotesQM1 />} />
+<Route path="/semester5/quantum-mechanics-1/pyqs" element={<PYQSQM1 />} />
+<Route path="/semester5/quantum-mechanics-1/pyq-solutions" element={<PYQSolutionsQM1 />} />
+<Route path="/semester5/quantum-mechanics-1/syllabus" element={<SyllabusQM1 />} />
+
+        
 
         <Route path="/semester5/digital-electronics" element={<DigitalElectronics />} />
         <Route path="/semester5/digital-electronics/syllabus" element={<div>Digital Electronics Syllabus</div>} />
