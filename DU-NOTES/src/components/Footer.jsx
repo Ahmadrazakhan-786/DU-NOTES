@@ -45,22 +45,22 @@ const Footer = ({ dark }) => {
       </div>
 
       <div className="flex justify-center items-center space-x-5 mb-6 text-2xl">
-        <a href="#" className="hover:text-purple-500">
+        <a href="https://www.facebook.com/profile.php?id=61576616820968" className="hover:text-purple-500">
           <FaFacebookF />
         </a>
-        <a href="#" className="hover:text-purple-500">
+        <a href="https://x.com/Zaid_Khan1123" className="hover:text-purple-500">
           <FaTwitter />
         </a>
-        <a href="#" className="hover:text-purple-500">
+        <a href="https://www.linkedin.com/in/ahmad-khan04" className="hover:text-purple-500">
           <FaLinkedinIn />
         </a>
-        <a href="#" className="hover:text-purple-500">
+        <a href="https://www.instagram.com/padhiyephysics?igsh=MTV6b3lqNjBtNnd6Zg==" className="hover:text-purple-500">
           <FaInstagram />
         </a>
-        <a href="#" className="hover:text-purple-500">
+        <a href="https://t.me/padhiyephysics" className="hover:text-purple-500">
           <FaTelegramPlane />
         </a>
-        <a href="#" className="hover:text-purple-500">
+        <a href="https://github.com/Ahmadrazakhan-786" className="hover:text-purple-500">
           <FaGithub />
         </a>
       </div>

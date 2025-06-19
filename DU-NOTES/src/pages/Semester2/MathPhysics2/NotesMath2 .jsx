@@ -1,6 +1,6 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const Notes = () => {
+const NotesMath2 = () => {
   return (
     <DownloadCard
       chapterTitle="MathPhysics Notes"
@@ -9,4 +9,4 @@ const Notes = () => {
   );
 };
 
-export default Notes;
+export default NotesMath2;

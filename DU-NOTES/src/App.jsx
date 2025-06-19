@@ -9,11 +9,35 @@ import Footer from "./components/Footer";
 
 // Semester 1
 import MathPhysics1 from "./pages/Semester1/MathPhysics1/MathPhysics1";
+import Lab from "./pages/Semester1/MathPhysics1/Lab";
+import Notes from "./pages/Semester1/MathPhysics1/Notes";
+import PYQS from "./pages/Semester1/MathPhysics1/PYQS";
+import PYQSolutions from "./pages/Semester1/MathPhysics1/PYQSolutions";
+import Syllabus from "./pages/Semester1/MathPhysics1/Syllabus";
+
+// Mechanics Subject
 import Mechanics from "./pages/Semester1/Mechanics/Mechanics";
+import LabMechanics from "./pages/Semester1/Mechanics/LabMechanics ";
+import NotesMechanics from "./pages/Semester1/Mechanics/NotesMechanics ";
+import PYQSMechanics from "./pages/Semester1/Mechanics/PYQSMechanics ";
+import PYQSolutionsMechanics from "./pages/Semester1/Mechanics/PYQSolutionsMechanics ";
+import SyllabusMechanics from "./pages/Semester1/Mechanics/SyllabusMechanics ";
+
 import WavesOscillations from "./pages/Semester1/WavesOscillations/WavesOscillations";
+import LabWaves from "./pages/Semester1/WavesOscillations/LabWaves ";
+import NotesWaves from "./pages/Semester1/WavesOscillations/NotesWaves ";
+import PYQSWaves from "./pages/Semester1/WavesOscillations/PYQSWaves ";
+import PYQSolutionsWaves from "./pages/Semester1/WavesOscillations/PYQSolutionsWaves ";
+import SyllabusWaves from "./pages/Semester1/WavesOscillations/SyllabusWaves ";
 
 // Semester 2
 import MathPhysics2 from "./pages/Semester2/MathPhysics2/MathPhysics2";
+import LabMath2 from "./pages/Semester2/MathPhysics2/LabMath2 ";
+import NotesMath2 from "./pages/Semester2/MathPhysics2/NotesMath2 ";
+import PYQSMath2 from "./pages/Semester2/MathPhysics2/PYQSMath2 ";
+import PYQSolutionsMath2 from "./pages/Semester2/MathPhysics2/PYQSolutionsMath2 ";
+import SyllabusMath2 from "./pages/Semester2/MathPhysics2/SyllabusMath2 ";
+
 import ElectricityMagnetism from "./pages/Semester2/ElectricityMagnetism/ElectricityMagnetism";
 import ElectricalCircuitAnalysis from "./pages/Semester2/ElectricalCircuitAnalysis/ElectricalCircuitAnalysis";
 
@@ -61,33 +85,37 @@ function App() {
 
           {/* Semester 1 */}
           <Route path="/semester1/math-physics-1" element={<MathPhysics1 />} />
-          <Route path="/semester1/math-physics-1/notes" element={<div>MathPhysics1 Notes</div>} />
-          <Route path="/semester1/math-physics-1/pyqs" element={<div>MathPhysics1 PYQs</div>} />
-          <Route path="/semester1/math-physics-1/pyq-solutions" element={<div>MathPhysics1 PYQ Solutions</div>} />
-          <Route path="/semester1/math-physics-1/lab" element={<div>MathPhysics1 Lab Content</div>} />
-          <Route path="/semester1/math-physics-1/syllabus" element={<div>MathPhysics1 Syllabus</div>} />
+          <Route path="/semester1/math-physics-1/lab" element={<Lab />} />
+          <Route path="/semester1/math-physics-1/notes" element={<Notes />} />
+<Route path="/semester1/math-physics-1/pyqs" element={<PYQS />} />
+<Route path="/semester1/math-physics-1/pyq-solutions" element={<PYQSolutions />} />
+<Route path="/semester1/math-physics-1/syllabus" element={<Syllabus />} />  
 
-          <Route path="/semester1/mechanics" element={<Mechanics />} />
-          <Route path="/semester1/mechanics/notes" element={<div>Mechanics Notes</div>} />
-          <Route path="/semester1/mechanics/pyqs" element={<div>Mechanics PYQs</div>} />
-          <Route path="/semester1/mechanics/pyq-solutions" element={<div>Mechanics PYQ Solutions</div>} />
-          <Route path="/semester1/mechanics/lab" element={<div>Mechanics Lab Content</div>} />
-          <Route path="/semester1/mechanics/syllabus" element={<div>Mechanics Syllabus</div>} />
+  <Route path="/semester1/mechanics" element={<Mechanics />} />
+<Route path="/semester1/mechanics/lab" element={<LabMechanics />} />
+<Route path="/semester1/mechanics/notes" element={<NotesMechanics />} />
+<Route path="/semester1/mechanics/pyqs" element={<PYQSMechanics />} />
+<Route path="/semester1/mechanics/pyq-solutions" element={<PYQSolutionsMechanics />} />
+<Route path="/semester1/mechanics/syllabus" element={<SyllabusMechanics />} />
 
-          <Route path="/semester1/waves-oscillations" element={<WavesOscillations />} />
-          <Route path="/semester1/waves-oscillations/notes" element={<div>Waves Notes</div>} />
-          <Route path="/semester1/waves-oscillations/pyqs" element={<div>Waves PYQs</div>} />
-          <Route path="/semester1/waves-oscillations/pyq-solutions" element={<div>Waves PYQ Solutions</div>} />
-          <Route path="/semester1/waves-oscillations/lab" element={<div>Waves Lab Content</div>} />
-          <Route path="/semester1/waves-oscillations/syllabus" element={<div>Waves Syllabus</div>} />
+
+         <Route path="/semester1/waves-oscillations" element={<WavesOscillations />} />
+<Route path="/semester1/waves-oscillations/lab" element={<LabWaves />} />
+<Route path="/semester1/waves-oscillations/notes" element={<NotesWaves />} />
+<Route path="/semester1/waves-oscillations/pyqs" element={<PYQSWaves />} />
+<Route path="/semester1/waves-oscillations/pyq-solutions" element={<PYQSolutionsWaves />} />
+<Route path="/semester1/waves-oscillations/syllabus" element={<SyllabusWaves />} />
+
 
           {/* Semester 2 */}
           <Route path="/semester2/math-physics-2" element={<MathPhysics2 />} />
-          <Route path="/semester2/math-physics-2/notes" element={<div>MathPhysics2 Notes</div>} />
-          <Route path="/semester2/math-physics-2/pyqs" element={<div>MathPhysics2 PYQs</div>} />
-          <Route path="/semester2/math-physics-2/pyq-solutions" element={<div>MathPhysics2 PYQ Solutions</div>} />
-          <Route path="/semester2/math-physics-2/lab" element={<div>MathPhysics2 Lab Content</div>} />
-          <Route path="/semester2/math-physics-2/syllabus" element={<div>MathPhysics2 Syllabus</div>} />
+<Route path="/semester2/math-physics-2/lab" element={<LabMath2 />} />
+<Route path="/semester2/math-physics-2/notes" element={<NotesMath2 />} />
+<Route path="/semester2/math-physics-2/pyqs" element={<PYQSMath2 />} />
+<Route path="/semester2/math-physics-2/pyq-solutions" element={<PYQSolutionsMath2 />} />
+<Route path="/semester2/math-physics-2/syllabus" element={<SyllabusMath2 />} />
+
+          
 
           <Route path="/semester2/electricity-magnetism" element={<ElectricityMagnetism />} />
           <Route path="/semester2/electricity-magnetism/notes" element={<div>Electricity & Magnetism Notes</div>} />

@@ -1,6 +1,6 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSolutions = () => {
+const PYQSolutionsMechanics = () => {
   return (
     <DownloadCard
       chapterTitle="MathPhysics PYQ Solutions"
@@ -9,4 +9,4 @@ const PYQSolutions = () => {
   );
 };
 
-export default PYQSolutions;
+export default PYQSolutionsMechanics;

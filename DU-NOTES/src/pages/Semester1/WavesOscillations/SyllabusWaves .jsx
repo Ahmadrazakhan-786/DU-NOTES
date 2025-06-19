@@ -1,6 +1,6 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const Syllabus = () => {
+const SyllabusWaves = () => {
   return (
     <DownloadCard
       chapterTitle="MathPhysics Syllabus"
@@ -9,4 +9,4 @@ const Syllabus = () => {
   );
 };
 
-export default Syllabus;
+export default SyllabusWaves;

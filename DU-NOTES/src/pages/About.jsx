@@ -6,13 +6,13 @@ const team = [
     name: "Ahmad",
     role: "Frontend Developer",
     image: "/ahmad.jpg",
-    github: "https://github.com/ahmad",
+    github: "https://github.com/Ahmadrazakhan-786",
   },
   {
     name: "Zaid",
     role: "Backend Developer",
     image: "/zaid.jpg",
-    github: "https://github.com/zaid",
+    github: "https://github.com/Zaid-khan01",
   },
   {
     name: "Ashir",
