@@ -39,11 +39,35 @@ import PYQSolutionsMath2 from "./pages/Semester2/MathPhysics2/PYQSolutionsMath2 
 import SyllabusMath2 from "./pages/Semester2/MathPhysics2/SyllabusMath2 ";
 
 import ElectricityMagnetism from "./pages/Semester2/ElectricityMagnetism/ElectricityMagnetism";
+import LabEM from "./pages/Semester2/ElectricityMagnetism/LabEM";
+import NotesEM from "./pages/Semester2/ElectricityMagnetism/NotesEM";
+import PYQSEM from "./pages/Semester2/ElectricityMagnetism/PYQSEM";
+import PYQSolutionsEM from "./pages/Semester2/ElectricityMagnetism/PYQSolutionsEM";
+import SyllabusEM from "./pages/Semester2/ElectricityMagnetism/SyllabusEM";
+
 import ElectricalCircuitAnalysis from "./pages/Semester2/ElectricalCircuitAnalysis/ElectricalCircuitAnalysis";
+import LabECA from "./pages/Semester2/ElectricalCircuitAnalysis/LabECA";
+import NotesECA from "./pages/Semester2/ElectricalCircuitAnalysis/NotesECA";
+import PYQSECA from "./pages/Semester2/ElectricalCircuitAnalysis/PYQSECA";
+import PYQSolutionsECA from "./pages/Semester2/ElectricalCircuitAnalysis/PYQSolutionsECA";
+import SyllabusECA from "./pages/Semester2/ElectricalCircuitAnalysis/SyllabusECA";
+
 
 // Semester 3
 import MathPhysics3 from "./pages/Semester3/MathPhysics3/MathPhysics3";
+import LabMath3 from "./pages/Semester3/MathPhysics3/LabMath3";
+import NotesMath3 from "./pages/Semester3/MathPhysics3/NotesMath3";
+import PYQSMath3 from "./pages/Semester3/MathPhysics3/PYQS";
+import PYQSolutionsMath3 from "./pages/Semester3/MathPhysics3/PYQSolutions";
+import SyllabusMath3 from "./pages/Semester3/MathPhysics3/Syllabus";
+
 import ThermalPhysics from "./pages/Semester3/ThermalPhysics/ThermalPhysics";
+import LabThermal from "./pages/Semester3/ThermalPhysics/LabThermal";
+import NotesThermal from "./pages/Semester3/ThermalPhysics/NotesThermal";
+import PYQSThermal from "./pages/Semester3/ThermalPhysics/PYQSThermal";
+import PYQSolutionsThermal from "./pages/Semester3/ThermalPhysics/PYQSolutionsThermal";
+import SyllabusThermal from "./pages/Semester3/ThermalPhysics/SyllabusThermal";
+
 import LightAndMatter from "./pages/Semester3/LightAndMatter/LightAndMatter";
 
 // Semester 4
@@ -118,28 +142,37 @@ function App() {
           
 
           <Route path="/semester2/electricity-magnetism" element={<ElectricityMagnetism />} />
-          <Route path="/semester2/electricity-magnetism/notes" element={<div>Electricity & Magnetism Notes</div>} />
-          <Route path="/semester2/electricity-magnetism/pyqs" element={<div>Electricity & Magnetism PYQs</div>} />
-          <Route path="/semester2/electricity-magnetism/pyq-solutions" element={<div>Electricity & Magnetism PYQ Solutions</div>} />
-          <Route path="/semester2/electricity-magnetism/lab" element={<div>Electricity & Magnetism Lab Content</div>} />
-          <Route path="/semester2/electricity-magnetism/syllabus" element={<div>Electricity & Magnetism Syllabus</div>} />
+<Route path="/semester2/electricity-magnetism/lab" element={<LabEM />} />
+<Route path="/semester2/electricity-magnetism/notes" element={<NotesEM />} />
+<Route path="/semester2/electricity-magnetism/pyqs" element={<PYQSEM />} />
+<Route path="/semester2/electricity-magnetism/pyq-solutions" element={<PYQSolutionsEM />} />
+<Route path="/semester2/electricity-magnetism/syllabus" element={<SyllabusEM />} />
 
-          <Route path="/semester2/electrical-circuit-analysis" element={<ElectricalCircuitAnalysis />} />
-          <Route path="/semester2/electrical-circuit-analysis/notes" element={<div>Electrical Circuit Analysis Notes</div>} />
-          <Route path="/semester2/electrical-circuit-analysis/pyqs" element={<div>Electrical Circuit Analysis PYQs</div>} />
-          <Route path="/semester2/electrical-circuit-analysis/pyq-solutions" element={<div>Electrical Circuit Analysis PYQ Solutions</div>} />
-          <Route path="/semester2/electrical-circuit-analysis/lab" element={<div>Electrical Circuit Analysis Lab Content</div>} />
-          <Route path="/semester2/electrical-circuit-analysis/syllabus" element={<div>Electrical Circuit Analysis Syllabus</div>} />
+
+        <Route path="/semester2/electrical-circuit-analysis" element={<ElectricalCircuitAnalysis />} />
+<Route path="/semester2/electrical-circuit-analysis/lab" element={<LabECA />} />
+<Route path="/semester2/electrical-circuit-analysis/notes" element={<NotesECA />} />
+<Route path="/semester2/electrical-circuit-analysis/pyqs" element={<PYQSECA />} />
+<Route path="/semester2/electrical-circuit-analysis/pyq-solutions" element={<PYQSolutionsECA />} />
+<Route path="/semester2/electrical-circuit-analysis/syllabus" element={<SyllabusECA />} />
+
 
           {/* Semester 3 */}
-          <Route path="/semester3/math-physics-3" element={<MathPhysics3 />} />
-          <Route path="/semester3/math-physics-3/notes" element={<div>Math Physics 3 Notes</div>} />
-          <Route path="/semester3/math-physics-3/pyqs" element={<div>Math Physics 3 PYQs</div>} />
-          <Route path="/semester3/math-physics-3/pyq-solutions" element={<div>Math Physics 3 PYQ Solutions</div>} />
-          <Route path="/semester3/math-physics-3/lab" element={<div>Math Physics 3 Lab Content</div>} />
-          <Route path="/semester3/math-physics-3/syllabus" element={<div>Math Physics 3 Syllabus</div>} />
+         <Route path="/semester3/math-physics-3" element={<MathPhysics3 />} />
+<Route path="/semester3/math-physics-3/lab" element={<LabMath3 />} />
+<Route path="/semester3/math-physics-3/notes" element={<NotesMath3 />} />
+<Route path="/semester3/math-physics-3/pyqs" element={<PYQSMath3 />} />
+<Route path="/semester3/math-physics-3/pyq-solutions" element={<PYQSolutionsMath3 />} />
+<Route path="/semester3/math-physics-3/syllabus" element={<SyllabusMath3 />} />
+
 
           <Route path="/semester3/thermal-physics" element={<ThermalPhysics />} />
+<Route path="/semester3/thermal-physics/lab" element={<LabThermal />} />
+<Route path="/semester3/thermal-physics/notes" element={<NotesThermal />} />
+<Route path="/semester3/thermal-physics/pyqs" element={<PYQSThermal />} />
+<Route path="/semester3/thermal-physics/pyq-solutions" element={<PYQSolutionsThermal />} />
+<Route path="/semester3/thermal-physics/syllabus" element={<SyllabusThermal />} />
+
           <Route path="/semester3/thermal-physics/notes" element={<div>Thermal Physics Notes</div>} />
           <Route path="/semester3/thermal-physics/pyqs" element={<div>Thermal Physics PYQs</div>} />
           <Route path="/semester3/thermal-physics/pyq-solutions" element={<div>Thermal Physics PYQ Solutions</div>} />
