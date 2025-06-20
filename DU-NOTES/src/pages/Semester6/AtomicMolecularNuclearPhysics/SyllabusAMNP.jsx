@@ -1,13 +1,12 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const SyllabusEM = ({dark}) => {
+const SyllabusAMNP = () => {
   return (
     <DownloadCard
-      chapterTitle="Electricity and Magnetism Syllabus"
+      chapterTitle="MathPhysics Syllabus"
       pdfLink="/pdfs/mathphysics1-syllabus.pdf"
-      dark={dark}
     />
   );
 };
 
-export default SyllabusEM;
+export default SyllabusAMNP;

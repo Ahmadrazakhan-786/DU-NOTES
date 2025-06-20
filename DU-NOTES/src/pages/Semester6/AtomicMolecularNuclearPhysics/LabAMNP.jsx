@@ -1,14 +1,13 @@
 // src/pages/Semester1/MathPhysics1/Lab.jsx
 import DownloadCard from "../../../components/DownloadCard";
 
-const LabECA = ({dark}) => {
+const LabAMNP = () => {
   return (
     <DownloadCard
-      chapterTitle="Electrical Circuit Analysis Lab Manual"
+      chapterTitle="MathPhysics Lab Manual"
       pdfLink="/pdfs/mathphysics1-lab.pdf" // Use actual link from Django later
-      dark={dark}
     />
   );
 };
 
-export default LabECA;
+export default LabAMNP;

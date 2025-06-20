@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const SyllabusECA = () => {
+const SyllabusECA = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics Syllabus"
+      chapterTitle="Electrical Circuit Analysis Syllabus"
       pdfLink="/pdfs/mathphysics1-syllabus.pdf"
+      dark={dark}
     />
   );
 };

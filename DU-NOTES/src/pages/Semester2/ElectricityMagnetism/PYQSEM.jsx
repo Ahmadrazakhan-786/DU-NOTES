@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSEM = () => {
+const PYQSEM = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics PYQs"
+      chapterTitle="Electricity and Magnetism PYQs"
       pdfLink="/pdfs/mathphysics1-pyqs.pdf"
+      dark={dark}
     />
   );
 };

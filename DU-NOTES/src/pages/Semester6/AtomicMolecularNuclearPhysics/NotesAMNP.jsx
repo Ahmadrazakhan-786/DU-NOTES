@@ -1,13 +1,12 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const Notes = ({dark}) => {
+const NotesAMNP = () => {
   return (
     <DownloadCard
       chapterTitle="MathPhysics Notes"
       pdfLink="/pdfs/mathphysics1-notes.pdf"
-      dark={dark}
     />
   );
 };
 
-export default Notes;
+export default NotesAMNP;

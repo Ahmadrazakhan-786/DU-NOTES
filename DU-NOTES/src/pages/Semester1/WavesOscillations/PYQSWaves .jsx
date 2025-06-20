@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSWaves = () => {
+const PYQSWaves = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics PYQs"
+      chapterTitle="Wave Oscillations PYQs"
       pdfLink="/pdfs/mathphysics1-pyqs.pdf"
+      dark={dark}
     />
   );
 };

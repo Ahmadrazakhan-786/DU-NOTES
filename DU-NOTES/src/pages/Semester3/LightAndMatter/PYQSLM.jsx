@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSLM = () => {
+const PYQSLM = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics PYQs"
+      chapterTitle="Light and Matter PYQs"
       pdfLink="/pdfs/mathphysics1-pyqs.pdf"
+      dark={dark}
     />
   );
 };

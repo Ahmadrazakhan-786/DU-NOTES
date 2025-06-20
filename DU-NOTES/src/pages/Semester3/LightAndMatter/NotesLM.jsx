@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const NotesLM = () => {
+const NotesLM = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics Notes"
+      chapterTitle="Light and Matter Notes"
       pdfLink="/pdfs/mathphysics1-notes.pdf"
+      dark={dark}
     />
   );
 };

@@ -1,13 +1,13 @@
-// Example: Notes.jsx
-import React from "react";
+import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSolutions = () => {
+const PYQSolutionsMath3= ({dark}) => {
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-bold text-[#FF007F] mb-4">📘 PYQSolutions</h2>
-      <p className="text-lg">Notes content for this subject will appear here.</p>
-    </div>
+    <DownloadCard
+      chapterTitle="Mathematical Physics-3 PYQ Solutions"
+      pdfLink="/pdfs/mathphysics1-pyq-solutions.pdf"
+      dark={dark}
+    />
   );
 };
 
-export default PYQSolutions;
+export default PYQSolutionsMath3;

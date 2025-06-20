@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSThermal = () => {
+const PYQSThermal = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics PYQs"
+      chapterTitle="Thermal Physics PYQs"
       pdfLink="/pdfs/mathphysics1-pyqs.pdf"
+      dark={dark}
     />
   );
 };

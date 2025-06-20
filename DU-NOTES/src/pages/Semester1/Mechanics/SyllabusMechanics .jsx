@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const SyllabusMechanics = () => {
+const SyllabusMechanics = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics Syllabus"
+      chapterTitle="Mechanics Syllabus"
       pdfLink="/pdfs/mathphysics1-syllabus.pdf"
+      dark={dark}
     />
   );
 };

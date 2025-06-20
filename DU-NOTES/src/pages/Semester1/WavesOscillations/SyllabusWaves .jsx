@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const SyllabusWaves = () => {
+const SyllabusWaves = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics Syllabus"
+      chapterTitle="Wave Oscillations Syllabus"
       pdfLink="/pdfs/mathphysics1-syllabus.pdf"
+      dark={dark}
     />
   );
 };

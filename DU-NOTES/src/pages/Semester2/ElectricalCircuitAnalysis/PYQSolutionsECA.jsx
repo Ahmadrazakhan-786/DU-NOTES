@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSolutionsECA = () => {
+const PYQSolutionsECA = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics PYQ Solutions"
+      chapterTitle="Electrical Circuit Analysis PYQ Solutions"
       pdfLink="/pdfs/mathphysics1-pyq-solutions.pdf"
+      dark={dark}
     />
   );
 };

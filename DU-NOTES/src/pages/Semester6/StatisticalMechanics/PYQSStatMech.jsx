@@ -1,13 +1,12 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSolutionsMath2 = ({dark}) => {
+const PYQSStatMech= () => {
   return (
     <DownloadCard
-      chapterTitle="Mathematical Physics-2 Solutions"
+      chapterTitle="MathPhysics PYQ Solutions"
       pdfLink="/pdfs/mathphysics1-pyq-solutions.pdf"
-      dark={dark}
     />
   );
 };
 
-export default PYQSolutionsMath2;
+export default PYQSStatMech;
