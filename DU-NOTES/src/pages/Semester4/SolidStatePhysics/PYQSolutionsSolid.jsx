@@ -1,10 +1,11 @@
 import DownloadCard from "../../../components/DownloadCard";
 
-const PYQSolutionsSolid= () => {
+const PYQSolutionsSolid= ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics PYQ Solutions"
+      chapterTitle="Solid State Physics PYQ Solutions"
       pdfLink="/pdfs/mathphysics1-pyq-solutions.pdf"
+      dark={dark}
     />
   );
 };

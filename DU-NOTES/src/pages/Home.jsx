@@ -57,10 +57,10 @@ const Home = () => {
       <div className="w-full flex flex-col md:flex-row items-center justify-between gap-32 max-w-6xl">
         {/* Left Text */}
         <div className="text-left space-y-4 md:w-1/2">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#FF007F]">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#FF007F] font-serif">
             WELCOME TO DU NOTES
           </h2>
-          <p className="text-base md:text-lg text-gray-500 font-bold">
+          <p className="text-base md:text-lg text-gray-500 font-semibold font-serif">
             Your one-stop destination for all B.Sc. Physics (Hons.) DU resources!
             Access high-quality notes, PYQs, syllabus, lab manuals, and more – all in one place.
             Created specially for DU students.
@@ -71,7 +71,7 @@ const Home = () => {
 
         {/* ✅ Right Image with Hover Rotate + Glow Effect */}
         <div className="md:w-1/2 flex justify-center">
-          <div className="relative group w-60 h-60 rounded-full overflow-hidden transition-all duration-500">
+          <div className="relative group w-60 h-60 rounded-full border-4 border-transparent group-hover:border-pink-500 transition-all duration-500">
             <img
               src={heroOval}
               alt="DU Physics"
@@ -82,7 +82,7 @@ const Home = () => {
       </div>
 
       {/* ✅ Main Heading */}
-      <h1 className="text-4xl font-bold text-[#FF007F] text-center mt-10">
+      <h1 className="text-3xl font-bold text-[#FF007F] text-center mt-10 font-serif">
         BSC PHYSICS NOTES 💕
       </h1>
 

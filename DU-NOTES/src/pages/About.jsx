@@ -18,7 +18,7 @@ const team = [
     name: "Ashir",
     role: "Owner",
     image: "/ashir.jpg",
-    github: "https://github.com/ashir",
+    github: "#",
   },
 ];
 

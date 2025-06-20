@@ -1,11 +1,12 @@
 // src/pages/Semester1/MathPhysics1/Lab.jsx
 import DownloadCard from "../../../components/DownloadCard";
 
-const LabAnalog = () => {
+const LabAnalog = ({dark}) => {
   return (
     <DownloadCard
-      chapterTitle="MathPhysics Lab Manual"
+      chapterTitle="Analog Electronics Lab Manual"
       pdfLink="/pdfs/mathphysics1-lab.pdf" // Use actual link from Django later
+      dark={dark}
     />
   );
 };

@@ -15,7 +15,7 @@ const Footer = ({ dark }) => {
         dark ? "bg-[#2c2c2c] text-white" : "bg-[#fdfbd4] text-black"
       }`}
     >
-      <h2 className="text-2xl font-bold text-[#a958f4] mb-4">DU NOTES</h2>
+      <h2 className="text-2xl font-bold text-[#a958f4] mb-4 font-serif">DU NOTES</h2>
 
       <div className="space-x-6 mb-4 font-medium">
         <a

@@ -14,8 +14,8 @@ const Navbar = ({ dark, setDark }) => {
         transition-all duration-300`}
       >
         {/* Logo */}
-        <div className="text-2xl font-bold text-[#a958f4]">
-          <Link to="/">📘 DU Notes</Link>
+        <div className="text-2xl font-bold text-[#a958f4] font-serif">
+          <Link to="/">📔 DU Notes</Link>
         </div>
 
         {/* Desktop links */}
