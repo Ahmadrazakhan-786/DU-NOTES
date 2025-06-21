@@ -17,7 +17,7 @@ const Navbar = ({ dark, setDark }) => {
         <div className="text-2xl font-bold text-[#a958f4] font-serif">
           <Link to="/">📔 DU Notes</Link>
         </div>
-
+      
         {/* Desktop links */}
         <div className="hidden md:flex items-center space-x-6 font-serif">
           {["Home", "About", "Contact"].map((item, idx) => (

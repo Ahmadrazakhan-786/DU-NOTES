@@ -7,7 +7,7 @@ const DownloadCard = ({ chapterTitle = "Chapter Title", pdfLink = "#", dark }) =
     >
       <div className="bg-[#fdfbd4] text-gray-900 rounded-2xl p-8 w-[90%] max-w-md text-center border-[2px] border-black shadow-lg">
         <h1 className="text-2xl font-bold mb-2">{chapterTitle}</h1>
-        <p className="mb-4 text-gray-700">Showing content for: Bsc Physics</p>
+        <p className="mb-4 text-gray-700">Showing content for: Bsc Physics Honours</p>
         <a
           href={pdfLink}
           target="_blank"

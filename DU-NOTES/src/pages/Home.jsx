@@ -83,7 +83,7 @@ const Home = () => {
 
       {/* ✅ Main Heading */}
       <h1 className="text-3xl font-bold text-[#FF007F] text-center mt-10 font-serif">
-        BSC PHYSICS NOTES 💕
+        BSC PHYSICS HONOURS 💕
       </h1>
 
       {/* ✅ Dropdown */}
